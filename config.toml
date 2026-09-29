@@ -1,0 +1,31 @@
+# 공정 관리 앱 테마 (3단계 UI 디자인)
+# 라이트/다크는 사용자의 브라우저·OS 설정을 따르고, 두 테마 모두 같은 색 체계를 쓴다.
+
+[client]
+toolbarMode = "minimal"      # 개발용 Deploy 버튼 등 숨김
+showErrorDetails = "full"
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+# Pretendard(웹폰트)를 쓰고, 인터넷이 없으면 맑은 고딕 → 시스템 글꼴로 대체
+font = "Pretendard Variable:https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css, Malgun Gothic, sans-serif"
+baseRadius = "medium"
+showWidgetBorder = true
+
+[theme.light]
+primaryColor = "#2563EB"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F3F5F9"
+textColor = "#1F2937"
+borderColor = "#D9DEE7"
+chartCategoricalColors = ["#2563EB", "#D97706", "#059669", "#DC2626", "#7C3AED"]
+
+[theme.dark]
+primaryColor = "#60A5FA"
+backgroundColor = "#111827"
+secondaryBackgroundColor = "#1F2937"
+textColor = "#E5E7EB"
+borderColor = "#374151"
+chartCategoricalColors = ["#60A5FA", "#FBBF24", "#34D399", "#F87171", "#A78BFA"]
